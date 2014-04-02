@@ -30,7 +30,7 @@
     margin-bottom: $base-line-height
   // Questionable whether this is nice or not. It styles eternal links, but comes with some baggage.
   // a.reference.external:after
-  //   font-family: fontawesome-webfont
+  //   font-family: FontAwesome
   //   content: " \f08e "
   //   color: $text-light
   //   vertical-align: super
@@ -42,7 +42,7 @@
     margin-left: $base-line-height
     line-height: $base-line-height
     margin-bottom: $base-line-height
-  .literal-block
+  .literal-block, pre.literal-block
     @extend .codeblock
   // These are the various note pullouts that sphinx applies
   .note, .attention, .caution, .danger, .error, .hint, .important, .tip, .warning, .seealso
@@ -108,7 +108,7 @@
       &:after
         visibility: visible
         content: "\f0c1"
-        font-family: fontawesome-webfont
+        font-family: FontAwesome
         display: inline-block
     &:hover .headerlink
       display: inline-block
@@ -174,6 +174,9 @@
     td
       border: none
       padding-top: 5px
+    td > strong
+      display: inline-block
+      margin-top: 3px
     .field-name
       padding-right: 10px
       text-align: left
